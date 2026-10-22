@@ -1,5 +1,5 @@
 {
-  "name": "antigravity-translator-ts",
+  "name": "antigravity-translator",
   "version": "1.0.0",
   "type": "module",
   "description": "基於 Antigravity CLI (gemini-3.8-flash low) 的全站智慧網頁翻譯與高度自訂擴充套件",
@@ -29,3 +29,4 @@
     "typescript": "^5.7.2"
   }
 }
+

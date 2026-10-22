@@ -1,6 +1,6 @@
 # 🌐 Antigravity 網頁全站翻譯器 (Antigravity Translator TS)
 
-[![GitHub License](https://img.shields.io/github/license/Yuno-Liu/AntigravityTranslator-TS)](LICENSE)
+[![GitHub License](https://img.shields.io/github/license/Yuno-Liu/AntigravityTranslator)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7+-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Manifest V3](https://img.shields.io/badge/Chrome%20Extension-Manifest%20V3-4285F4?logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/mv3/intro/)
 [![Model](https://img.shields.io/badge/AI%20Model-gemini--3.8--flash-8B5CF6?logo=google&logoColor=white)](https://ai.google.dev/)
@@ -81,8 +81,8 @@ flowchart LR
 
 ### 步驟 1：複製專案與安裝建置
 ```bash
-git clone https://github.com/Yuno-Liu/AntigravityTranslator-TS.git
-cd AntigravityTranslator-TS
+git clone https://github.com/Yuno-Liu/AntigravityTranslator.git
+cd AntigravityTranslator
 npm install
 npm run build
 ```
@@ -178,3 +178,4 @@ npm run bridge
 ## 📜 授權協議 (License)
 
 本專案採用 [MIT License](LICENSE) 授權，歡迎自由研究、擴充與社群協作。
+
