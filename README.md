@@ -79,33 +79,40 @@ flowchart LR
 
 ## 🚀 安裝與啟動指引 (Installation & Quick Start)
 
-### 步驟 1：複製專案與安裝建置
-```bash
-git clone https://github.com/Yuno-Liu/AntigravityTranslator.git
-cd AntigravityTranslator
-npm install
-npm run build
-```
+### 方式一：從 GitHub Releases 下載預打包版本（推薦，最簡單快速）
 
-編譯完成後，所有靜態資源與腳本將輸出於 `dist/` 資料夾中。
+無需安裝 Node.js 或進行專案編譯，直接下載發布包即可部屬使用：
 
-### 步驟 2：啟動本地 Antigravity CLI 橋接服務
-確保本機環境已安裝 `agy` (Antigravity CLI)，並於終端機啟動橋接服務：
+1. 前往本專案的 [Releases 頁面](https://github.com/Yuno-Liu/AntigravityTranslator/releases)。
+2. 下載最新版本的 `AntigravityTranslator-v*.zip` 檔案。
+3. 解壓縮至電腦任意資料夾（內含已編譯的 `dist/` 目錄與 `bridge/` 伺服器腳本）。
+4. **啟動本機 Antigravity CLI 橋接服務**：
+   確保電腦已安裝 `agy` (Antigravity CLI)，開啟終端機進入解壓縮後的資料夾執行：
+   ```bash
+   node bridge/server.mjs
+   ```
+   （伺服器將監聽於 `http://127.0.0.1:18765`）
+5. **於 Chrome 載入套件**：
+   - 開啟 Chrome 瀏覽器，在網址列輸入 `chrome://extensions/`
+   - 開啟右上角 **「開發人員模式」 (Developer mode)** 開關
+   - 點選左上角 **「載入未封裝項目」 (Load unpacked)**
+   - 選取解壓縮資料夾內的 `dist` 目錄即可完成部屬！
 
-```bash
-npm run bridge
-# 或手動執行:
-node bridge/server.mjs
-```
+### 方式二：從原始碼自行安裝與建置（開發者用）
 
-伺服器預設將監聽於 `http://127.0.0.1:18765`。終端機會顯示偵測到的 `agy` 執行路徑與健康狀態。
-
-### 步驟 3：於 Chrome 瀏覽器載入擴充套件
-1. 開啟 Chrome 瀏覽器，進入擴充功能管理頁面：`chrome://extensions/`
-2. 開啟右上角 **「開發人員模式」 (Developer mode)** 開關。
-3. 點選左上角 **「載入未封裝項目」 (Load unpacked)**。
-4. 選取本專案的 `dist` 目錄。
-5. 安裝完成！點擊瀏覽器工具列的 🌐 圖示，即可開始享受全站雙語翻譯。
+1. 克隆專案並安裝相依套件：
+   ```bash
+   git clone https://github.com/Yuno-Liu/AntigravityTranslator.git
+   cd AntigravityTranslator
+   npm install
+   npm run build
+   ```
+2. 啟動本機 CLI 橋接服務：
+   ```bash
+   npm run bridge
+   # 或執行: node bridge/server.mjs
+   ```
+3. 開啟 Chrome 瀏覽器進入 `chrome://extensions/`，啟用「開發人員模式」，點選「載入未封裝項目」，選擇 `dist` 資料夾完成安裝。
 
 ---
 
@@ -178,4 +185,5 @@ npm run bridge
 ## 📜 授權協議 (License)
 
 本專案採用 [MIT License](LICENSE) 授權，歡迎自由研究、擴充與社群協作。
+
 
